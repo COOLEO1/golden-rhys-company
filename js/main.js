@@ -1,76 +1,10 @@
-const menuToggle = document.getElementById('menuToggle');
-const nav = document.getElementById('nav');
-
-if (menuToggle && nav) {
-  menuToggle.addEventListener('click', () => {
-    nav.classList.toggle('open');
-    menuToggle.textContent = nav.classList.contains('open') ? '✕' : '☰';
-    menuToggle.setAttribute('aria-label', nav.classList.contains('open') ? 'Close menu' : 'Open menu');
-  });
-
-  nav.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-      nav.classList.remove('open');
-      menuToggle.textContent = '☰';
-    });
-  });
-}
-
-// English / Chichewa language switch
-const languageBtn = document.getElementById('languageBtn');
-let language = localStorage.getItem('gr-language') || 'en';
-
-function applyLanguage() {
-  document.documentElement.lang = language === 'ny' ? 'ny' : 'en';
-  document.querySelectorAll('[data-en][data-ny]').forEach(element => {
-    element.innerHTML = element.dataset[language];
-  });
-  if (languageBtn) {
-    languageBtn.textContent = language === 'en' ? '🇲🇼 NY' : '🇬🇧 EN';
-  }
-}
-
-applyLanguage();
-
-if (languageBtn) {
-  languageBtn.addEventListener('click', () => {
-    language = language === 'en' ? 'ny' : 'en';
-    localStorage.setItem('gr-language', language);
-    applyLanguage();
-  });
-}
-
-// Reveal sections as they enter the screen
-if ('IntersectionObserver' in window) {
-  const revealObserver = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        revealObserver.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.08 });
-
-  document.querySelectorAll('.reveal').forEach(element => revealObserver.observe(element));
-} else {
-  document.querySelectorAll('.reveal').forEach(element => element.classList.add('visible'));
-}
-
-// Subtle pointer glow on devices with a mouse
-const glow = document.querySelector('.cursor-glow');
-if (glow) {
-  window.addEventListener('pointermove', event => {
-    if (event.pointerType === 'mouse') {
-      glow.style.left = event.clientX + 'px';
-      glow.style.top = event.clientY + 'px';
-    }
-  });
-}
-
-// Header background on scroll
-const header = document.querySelector('.header');
-if (header) {
-  window.addEventListener('scroll', () => {
-    header.classList.toggle('scrolled', window.scrollY > 30);
-  }, { passive: true });
-}
+(() => {
+const langBtn=document.getElementById("lang"),menu=document.getElementById("menu"),nav=document.getElementById("nav"),form=document.getElementById("contactForm"),message=document.getElementById("formMessage");
+let language=localStorage.getItem("gr-language")||"en";
+function setLanguage(next){language=next==="ny"?"ny":"en";document.documentElement.lang=language==="ny"?"ny":"en";document.querySelectorAll("[data-en][data-ny]").forEach(el=>el.innerHTML=el.dataset[language]);langBtn.innerHTML=language==="en"?"<strong>EN</strong> <i>/</i> NY":"EN <i>/</i> <strong>NY</strong>";langBtn.setAttribute("aria-label",language==="en"?"Switch to Chichewa":"Switch to English");localStorage.setItem("gr-language",language)}
+langBtn.addEventListener("click",()=>setLanguage(language==="en"?"ny":"en"));setLanguage(language);
+menu.addEventListener("click",()=>{nav.classList.toggle("open");menu.setAttribute("aria-expanded",String(nav.classList.contains("open")))});
+nav.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>nav.classList.remove("open")));
+form.addEventListener("submit",e=>{e.preventDefault();if(!form.reportValidity())return;const d=new FormData(form);const msg="Hello Golden-Rhys Company. My name is "+d.get("name")+(d.get("business")?" from "+d.get("business"):"")+". I am interested in: "+d.get("service")+". "+(d.get("details")||"Please contact me to discuss.");message.textContent=language==="en"?"Opening WhatsApp with your enquiry…":"Tikutsegula WhatsApp ndi uthenga wanu…";window.open("https://wa.me/265997894969?text="+encodeURIComponent(msg),"_blank","noopener");});
+const io=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add("show");io.unobserve(entry.target)}}),{threshold:.12});document.querySelectorAll(".section-title,.service-list article,.work-card,.price-card,.steps article,.contact-copy,.contact-form,.intro-grid").forEach(el=>{el.classList.add("reveal");io.observe(el)});
+})();
