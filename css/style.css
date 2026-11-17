@@ -41,3 +41,54 @@
  .hero{background:radial-gradient(ellipse at 80% 72%,rgba(101,137,75,.12),transparent 48%),#101b19}
 }
 @media(prefers-reduced-motion:reduce){.founder-photo img,.work-card,.price-card{transition:none!important}}
+
+
+/* Homepage conversion pass: put the offer in front of visitors */
+.hero{height:auto;min-height:610px;max-height:760px;padding-top:76px;padding-bottom:72px}
+.hero h1{font-size:clamp(46px,5.5vw,74px);max-width:700px}
+.hero-content>p{max-width:470px}
+.hero-visual{transform:translateY(-48%) scale(.88);transform-origin:center right}
+.hero-proof{margin-top:48px}
+#services{padding-top:76px;padding-bottom:78px}
+#services .section-index{margin-bottom:25px}
+#services .section-title{margin-bottom:32px}
+#services .section-title h2{font-size:clamp(38px,4.4vw,56px)}
+#services .service-list{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line);border-left:1px solid var(--line)}
+#services .service-list .service-link{min-height:150px;padding:24px 22px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);grid-template-columns:30px 1fr 20px;gap:12px}
+#services .service-list .service-link:hover{padding-left:26px;padding-right:18px}
+#services .service-list .service-link h3{font-size:18px}
+#services .service-list .service-link p{font-size:10px;line-height:1.65}
+#services .service-list .service-link small{font-size:8px}
+#about{padding-top:78px;padding-bottom:78px}
+#team{padding-top:72px;padding-bottom:78px}
+#team .section-index{margin-bottom:28px}
+#team .founder-card{display:grid;grid-template-columns:minmax(180px,.55fr) 1fr;gap:28px;padding:24px;margin-bottom:14px}
+#team .founder-photo{height:235px;min-height:0}
+#team .founder-copy h2{font-size:clamp(32px,3.4vw,45px);margin:10px 0 12px}
+#team .founder-copy p{font-size:11px;line-height:1.75;margin-bottom:10px}
+#work,#pricing,.process,.contact,.faq{padding-top:78px;padding-bottom:78px}
+#work .section-title,#pricing .section-title{margin-bottom:35px}
+#work .work-grid{gap:28px 20px}
+#work .work-image{height:260px}
+#pricing .price-card{min-height:340px;padding:21px 17px}
+#resources{padding-top:65px;padding-bottom:65px}
+@media(max-width:760px){
+ .hero{min-height:720px;padding:68px 7vw 65px}
+ .hero h1{font-size:clamp(43px,10vw,59px)}
+ .hero-proof{margin-top:32px}
+ .hero-visual{bottom:52px;right:14vw;transform:scale(.78);transform-origin:bottom right}
+ #services{padding-top:60px;padding-bottom:60px}
+ #services .service-list{grid-template-columns:1fr}
+ #services .service-list .service-link{min-height:0;padding:20px 15px;grid-template-columns:28px 1fr 18px}
+ #services .service-list .service-link:hover{padding-left:18px;padding-right:12px}
+ #about,#team,#work,#pricing,.process,.contact,#resources{padding-top:62px;padding-bottom:62px}
+ #team .founder-card{grid-template-columns:1fr;gap:18px;padding:17px}
+ #team .founder-photo{height:260px}
+ #team .founder-copy h2{font-size:37px}
+ #work .work-image{height:230px}
+}
+@media(min-width:761px) and (max-width:1050px){
+ .hero{min-height:590px}
+ .hero-visual{right:1vw;transform:translateY(-48%) scale(.72)}
+ #team .founder-card{grid-template-columns:.65fr 1fr}
+}
