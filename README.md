@@ -5,7 +5,7 @@ Premium bilingual (English / Chichewa) web development agency website and portfo
 ## Repository layout
 
 - `index.html`, `css/`, `js/`: agency website
-- `hotel-demo/`: Freddie's Lodge independent hospitality website concept
+- `hotel-demo/`: Nyanja View Lodge independent hospitality website concept
 - `construction-demo/`: Tithandizane Construction & Civils concept
 - `school-demo/`: Nthanda Academy private school concept
 - `dealership-demo/`: Mwayi Motors Malawi vehicle dealership concept
