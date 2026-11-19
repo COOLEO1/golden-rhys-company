@@ -44,14 +44,14 @@ For each service, use branch `main`, leave the Build Command blank, and set the 
 - WhatsApp: 0997894969
 - WhatsApp link: https://wa.me/265997894969
 
-## Indicative starting packages
+## Standard website packages
 
 - Starter Website: MWK 75,000
-- Business Website: MWK 150,000
-- Professional Website: MWK 250,000
-- Advanced Website: MWK 450,000
+- Business Website: MWK 200,000
+- Advanced Website: MWK 350,000
+- Premium Website: MWK 400,000
 
-Prices are starting estimates, not fixed quotations. Scope and budget can be discussed with each client. Domain registration, hosting and paid third-party services are quoted separately.
+These are the standard website package prices. Final scope and deliverables are agreed before development. E-commerce, advanced booking systems, custom dashboards, mobile applications and integrations require separate quotations. Domain registration, hosting and paid third-party services are quoted separately. Website maintenance starts from MWK 15,000 per month, depending on the agreed support scope.
 
 ## Technology
 
