@@ -1,3 +1,21 @@
-const menu=document.querySelector('.menu-btn'),nav=document.querySelector('.nav');if(menu&&nav){menu.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));menu.setAttribute('aria-label',open?'Close navigation':'Open navigation')});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menu.setAttribute('aria-expanded','false')}))}
-const form=document.getElementById('enquiryForm');if(form){form.addEventListener('submit',e=>{e.preventDefault();if(!form.reportValidity())return;const data=new FormData(form);const msg=['Hello Pyramids, I would like to make an enquiry.','', 'Name: '+data.get('name'),'Phone: '+data.get('phone'),'Interested in: '+data.get('interest'),'Project details: '+(data.get('message')||'Not provided'),'','Please let me know how I can proceed. Thank you.'].join('\n');const link='https://wa.me/265980005818?text='+encodeURIComponent(msg);const win=window.open(link,'_blank','noopener,noreferrer');const feedback=form.querySelector('.form-feedback');feedback.textContent=win?'Your enquiry message is ready in WhatsApp. Please review and send it.':'Please allow pop-ups to continue to WhatsApp.'})}
+const menu=document.querySelector('.menu-btn'),nav=document.querySelector('.nav');
+if(menu&&nav){
+  menu.addEventListener('click',()=>{
+    const open=nav.classList.toggle('open');
+    menu.setAttribute('aria-expanded',String(open));
+    menu.setAttribute('aria-label',open?'Close navigation':'Open navigation');
+  });
+  nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
+    nav.classList.remove('open');
+    menu.setAttribute('aria-expanded','false');
+  }));
+}
+const form=document.getElementById('enquiryForm');
+if(form){
+  form.addEventListener('submit',event=>{
+    event.preventDefault();
+    if(!form.reportValidity()) return;
+    form.querySelector('.form-feedback').textContent='Thank you. This is a concept preview; the enquiry form will be connected to Pyramids’ preferred contact channel after the business approves the website.';
+  });
+}
 document.getElementById('year').textContent=new Date().getFullYear();
