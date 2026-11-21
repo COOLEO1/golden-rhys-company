@@ -5,7 +5,7 @@
   const nav = document.getElementById("mainNav");
   const form = document.getElementById("enquiryForm");
   const feedback = document.getElementById("formFeedback");
-  let language = localStorage.getItem("freddies-lodge-language") || "en";
+  let language = localStorage.getItem("nyanja-view-lodge-language") || "en";
 
   const applyLanguage = (next) => {
     language = next === "ny" ? "ny" : "en";
@@ -15,7 +15,7 @@
     });
     languageButton.setAttribute("aria-label", language === "en" ? "Switch to Chichewa" : "Switch to English");
     languageButton.innerHTML = language === "en" ? "<strong>EN</strong> <i>/</i> NY" : "EN <i>/</i> <strong>NY</strong>";
-    localStorage.setItem("freddies-lodge-language", language);
+    localStorage.setItem("nyanja-view-lodge-language", language);
     if (feedback) feedback.textContent = "";
   };
 
