@@ -45,3 +45,23 @@ a,button,.room-card,.experience-card,.journal-card,.text-link,.nav-book{transiti
 @media(hover:hover) and (pointer:fine){.room-card:hover .room-image img,.experience-card:hover img,.story-image:hover img{transform:scale(1.035)}}
 @media(max-width:700px){.hero-image{background-position:58% center}.hero-content{padding:54px 6vw}.room-image{height:260px}.quote-band{height:350px}.quote-band blockquote{font-size:clamp(27px,7vw,38px)}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.hero-image{transform:none}}
+
+/* Malawi-first contrast refinement: deep forest, lake-stone and warm brass */
+:root{--forest:#172820;--forest2:#21392e;--cream:#1d3027;--paper:#26382e;--ink:#f0eadc;--muted:#c0c8ba;--gold:#d1b47c;--line:rgba(235,226,205,.17)}
+body{background:#1b2c24;color:#eee8da}.demo-ribbon{background:#b99b67;color:#17251f}
+.site-header,.main-nav{background:rgba(25,42,33,.97);border-color:rgba(235,226,205,.14)}
+.brand-symbol,.main-nav a,.language-switch{color:#eee8da}.brand-copy small,.main-nav a{color:#c2cbbb}
+.main-nav .nav-book{background:#c7aa73;color:#17251f;border-color:#c7aa73}
+.intro,.stay,.enquire{background:#20352a;color:#eee8da}.intro h2,.section-heading h2,.intro-copy p,.section-heading>p,.story h2,.story-copy h2{color:#eee8da}
+.intro-copy p,.section-heading>p,.story-copy>p,.enquire-heading>p{color:#c2cbbb}.section-label{color:#d0b77f}
+.room-card,.experience-card,.experience-card>div,.enquiry-form{background:#293e32;color:#f0eadc;border:1px solid rgba(235,226,205,.13)}
+.room-meta h3,.experience-card h3,.journal-grid h3{color:#f1eadb}.room-meta p,.experience-card p{color:#c0c8ba}
+.room-meta>span,.experience-card>div>span,.journal-grid article>span{color:#d1b47c}
+.story{background:#172820!important;color:#eee8da}.story-copy h2{color:#f0eadc!important}.story-copy h2 em{color:#d1b47c!important}.story-copy>p{color:#c3ccbf!important}
+.enquiry-form input,.enquiry-form select,.enquiry-form textarea{background:#1d3027!important;color:#f1eadb!important;border-color:#657568}
+.enquiry-form label>span{color:#d2c49f}.enquiry-form input::placeholder,.enquiry-form textarea::placeholder{color:#aeb9aa}
+.form-feedback{color:#d5c18e}.button-dark{background:#c7aa73;color:#17251f}.button-dark:hover{background:#e0c895;color:#17251f}
+.footer{background:#101d17;color:#eee8da}.footer-bottom,.image-credit{color:#b7c1b2}.footer-bottom a,.footer-top>p{color:#d2bd91}
+.image-fallback{background:linear-gradient(135deg,#314b3b,#172820)!important;position:relative}img.image-load-failed{opacity:0}
+.image-fallback:after{content:"Image preview unavailable";position:absolute;inset:auto 12px 12px auto;color:#e6d8b7;font-size:9px;letter-spacing:.1em}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
