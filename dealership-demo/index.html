@@ -1,15 +1,102 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#101820"><meta name="description" content="Mwayi Motors Malawi — a vehicle dealership website concept by Golden-Rhys Company."><title>Mwayi Motors Malawi | Cars for Malawi</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#101820"><meta name="description" content="Mwayi Motors Malawi — a vehicle dealership website concept by Golden-Rhys Company."><title>Mwayi Motors Malawi | Cars for Malawi</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{--black:#101820;--panel:#18232d;--orange:#f3a44b;--paper:#f3f4f2;--muted:#9ca8b1;--line:#34414b;--max:1200px}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--black);color:#f6f7f6;font:15px/1.7 "DM Sans",sans-serif}a{color:inherit;text-decoration:none}.ribbon{background:var(--orange);color:#111820;text-align:center;padding:8px;font-size:10px;letter-spacing:.13em;text-transform:uppercase;font-weight:800}.nav{height:82px;padding:0 5%;display:flex;align-items:center;justify-content:space-between;background:#101820;position:sticky;top:0;z-index:10;border-bottom:1px solid #ffffff17}.brand{font:800 17px Manrope;letter-spacing:-.05em}.brand b{color:var(--orange)}.brand small{display:block;color:#9ca8b1;font:600 9px "DM Sans";letter-spacing:.19em}.links{display:flex;gap:28px;align-items:center;font-size:11px;font-weight:700}.links a:hover{color:var(--orange)}.nav-cta,.btn{background:var(--orange);color:#101820;padding:13px 18px;font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;display:inline-block}.menu{display:none;background:none;border:0;color:white;font-size:24px}.hero{min-height:650px;display:grid;grid-template-columns:1fr 1fr;background:radial-gradient(circle at 25% 35%,#283541 0,transparent 48%)}.hero-copy{padding:105px 6vw 80px 9%;align-self:center}.eyebrow,.label{color:var(--orange);font-size:10px;letter-spacing:.18em;font-weight:800;text-transform:uppercase}h1{font:800 clamp(48px,6vw,78px)/1.03 Manrope;letter-spacing:-.08em;margin:25px 0}h1 em,h2 em{font-style:normal;color:var(--orange)}.hero-copy p{color:#b2bdc5;max-width:450px}.actions{display:flex;gap:24px;align-items:center;margin-top:33px}.text-link{font-size:11px;border-bottom:1px solid #6d7b86;padding-bottom:8px}.hero-car{background:linear-gradient(90deg,var(--black),transparent 38%),linear-gradient(0deg,#10182044,#10182022),url('https://upload.wikimedia.org/wikipedia/commons/f/f2/Toyota_Harrier.jpg') center/cover;min-height:650px;position:relative}.hero-caption{position:absolute;bottom:25px;right:5%;font-size:9px;letter-spacing:.18em;color:#d2d9de}.wrap{width:min(var(--max),90%);margin:auto}.trust{display:grid;grid-template-columns:repeat(3,1fr);background:var(--panel);border:1px solid var(--line);margin-top:-1px}.trust div{padding:25px 30px;border-right:1px solid var(--line)}.trust div:last-child{border:0}.local-note{display:flex;justify-content:space-between;align-items:center;gap:24px;padding:22px 25px;background:#222f39;border:1px solid var(--line);border-top:0}.local-note strong{font:700 15px Manrope;color:var(--orange)}.local-note p{margin:5px 0 0;color:#b2bdc5;font-size:12px}.local-note>span{font-size:9px;letter-spacing:.14em;color:#c5ced4;font-weight:800;text-align:right}.trust b{display:block;font:700 17px Manrope}.trust span{font-size:10px;color:var(--muted);letter-spacing:.1em;text-transform:uppercase}.block{padding:100px 0}.heading{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:42px}.heading h2{font:800 clamp(36px,4.5vw,57px)/1.08 Manrope;letter-spacing:-.07em;margin:12px 0 0}.heading>p{max-width:390px;color:#a8b3bb;margin:0}.filters{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:25px}.filter{border:1px solid var(--line);background:transparent;color:#c2cbd1;padding:9px 15px;font-size:10px;font-weight:700;cursor:pointer}.filter.active,.filter:hover{background:var(--orange);border-color:var(--orange);color:var(--black)}.cars{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.car{background:var(--panel);border:1px solid var(--line);transition:.2s}.car:hover{transform:translateY(-4px);border-color:#687784}.car[hidden]{display:none}.car-photo{height:205px;position:relative}.car-photo img{width:100%;height:100%;object-fit:cover;display:block}.car-photo span{position:absolute;left:13px;top:13px;background:var(--orange);color:#101820;padding:6px 9px;font-size:9px;font-weight:800;letter-spacing:.1em}.car-info{padding:19px}.car-meta{display:flex;justify-content:space-between;color:#9eabb4;font-size:9px;letter-spacing:.1em;text-transform:uppercase}.car h3{font:700 19px Manrope;margin:9px 0 13px}.specs{display:flex;gap:13px;flex-wrap:wrap;color:#b4bec5;font-size:10px;border-bottom:1px solid var(--line);padding-bottom:15px}.car-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:14px}.price{font:800 16px Manrope;color:var(--orange)}.details{font-size:10px;font-weight:800;letter-spacing:.1em}.disclaimer{font-size:10px;color:#82909a;margin-top:18px}.why{background:#e9eceb;color:var(--black)}.why .heading>p{color:#697680}.why .heading h2 em{color:#bb772d}.benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.benefit{background:white;padding:30px;min-height:190px}.benefit small{font-size:10px;color:#b77a36;font-weight:800;letter-spacing:.15em}.benefit h3{font:700 19px Manrope;margin:23px 0 8px}.benefit p{font-size:12px;color:#68747d;margin:0}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line)}.step{background:var(--black);padding:25px;min-height:170px}.step b{color:var(--orange);font-size:11px}.step h3{font:700 17px Manrope;margin:28px 0 7px}.step p{font-size:11px;color:#a7b2ba;margin:0}.contact{background:var(--orange);color:var(--black);padding:75px 0}.contact-inner{display:flex;justify-content:space-between;align-items:center;gap:30px}.contact h2{font:800 clamp(34px,4.5vw,52px)/1.08 Manrope;letter-spacing:-.07em;margin:0}.contact p{font-size:12px;color:#59452e;margin:12px 0 0}.contact .btn{background:var(--black);color:white;white-space:nowrap}.footer{background:#0b1218;padding:50px 0 22px}.foot-top{display:flex;justify-content:space-between;gap:30px;padding-bottom:32px;border-bottom:1px solid #ffffff22}.foot-top p{font-size:12px;color:#9ba8b1;max-width:350px}.footlinks{display:flex;gap:22px;flex-wrap:wrap;font-size:11px;color:#c1cbd1}.copy{display:flex;justify-content:space-between;padding-top:18px;font-size:10px;color:#7f8c95}.mobile{display:none}
 @media(max-width:800px){.nav{height:70px}.menu{display:block}.links{display:none;position:absolute;top:70px;left:0;right:0;background:#18232d;padding:22px 6%;flex-direction:column;align-items:stretch;border-bottom:1px solid var(--line)}.links.open{display:flex}.links a{padding:7px 0}.hero{grid-template-columns:1fr}.hero-copy{padding:80px 7% 60px}.hero-car{min-height:340px;background-position:center}.trust{grid-template-columns:1fr}.trust div{border-right:0;border-bottom:1px solid var(--line);padding:17px 23px}.trust div:last-child{border-bottom:0}.local-note{display:block}.local-note>span{display:block;text-align:left;margin-top:12px;line-height:1.8}.block{padding:75px 0}.heading{display:block}.heading>p{margin-top:18px}.cars{grid-template-columns:1fr 1fr}.benefits{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}.contact-inner{display:block}.contact .btn{margin-top:23px}.foot-top{display:block}.footlinks{margin-top:25px}.copy{flex-direction:column;gap:8px}}
 @media(max-width:480px){h1{font-size:49px}.actions{align-items:flex-start;flex-direction:column;gap:17px}.cars,.benefits{grid-template-columns:1fr}.car-photo{height:220px}.steps{grid-template-columns:1fr}.step{min-height:140px}.step h3{margin-top:17px}.copy{padding-bottom:48px}.mobile{display:block;position:fixed;bottom:0;left:0;right:0;z-index:12;background:var(--orange);color:var(--black);padding:13px;text-align:center;font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}}
+
+/* Mwayi Motors — modern automotive showroom identity */
+:root{--black:#18211f;--panel:#fafbf9;--orange:#b83e32;--paper:#f1f3f2;--muted:#68716d;--line:#dde2df;--max:1240px}
+body{background:var(--paper);color:#18211f;font-family:"Inter",Arial,sans-serif}
+.ribbon{background:#b83e32;color:#fff;font-family:"Sora",sans-serif;letter-spacing:.15em}
+.nav{background:#f1f3f2;border-color:#dde2df}
+.brand{font-family:"Sora",sans-serif;color:#18211f}
+.brand b{color:#b83e32}
+.brand small{color:#68716d}
+.links{font-family:"Inter",sans-serif}
+.links a{color:#46534e}
+.links a:hover{color:#b83e32}
+.nav-cta,.btn{background:#b83e32;color:white;font-family:"Sora",sans-serif}
+.nav-cta:hover,.btn:hover{background:#18211f;color:white}
+.menu{color:#18211f}
+.hero{background:#f1f3f2;grid-template-columns:1fr 1fr;min-height:660px;position:relative}
+.hero-copy{padding-left:max(6vw,calc((100vw - var(--max))/2));padding-right:5vw}
+.eyebrow,.label{color:#b83e32;font-family:"Sora",sans-serif}
+h1,h2,h3{font-family:"Sora",sans-serif}
+h1{font-size:clamp(48px,6.4vw,82px);letter-spacing:-.085em;color:#18211f}
+h1 em,h2 em{color:#b83e32}
+.hero-copy p{color:#68716d}
+.hero-car{background:linear-gradient(90deg,#f1f3f2 0%,rgba(241,243,242,.15) 30%,transparent 48%),linear-gradient(0deg,#18211f33,transparent 28%),url('https://upload.wikimedia.org/wikipedia/commons/f/f2/Toyota_Harrier.jpg') center/cover;min-height:660px}
+.hero-caption{color:white;text-shadow:0 1px 12px #0008}
+.hero-search{max-width:430px;margin-top:30px;background:white;border:1px solid #dde2df;padding:13px 15px 15px}
+.hero-search label,.inventory-search label{display:block;font:700 9px "Sora";letter-spacing:.14em;color:#68716d;margin-bottom:8px}
+.hero-search>div{display:flex;align-items:center}
+.hero-search input{width:100%;border:0;outline:0;background:transparent;font:500 13px "Inter";color:#18211f;min-width:0}
+.hero-search button{width:39px;height:39px;border:0;background:#b83e32;color:white;font-size:20px;cursor:pointer}
+.trust{background:#fff;border:1px solid #dde2df;color:#18211f}
+.trust div{border-color:#dde2df}
+.trust b{font-family:"Sora"}
+.trust span{color:#68716d}
+.local-note{background:#e6eae8;border-color:#dde2df}
+.local-note strong{font-family:"Sora";color:#b83e32}
+.local-note p,.local-note>span{color:#68716d}
+.block{padding:clamp(78px,8vw,110px) 0}
+.heading h2{font:700 clamp(38px,4.8vw,62px)/1.05 "Sora";letter-spacing:-.08em;color:#18211f}
+.heading>p{color:#68716d}
+.inventory-search{display:flex;align-items:center;gap:18px;max-width:560px;background:#fff;border:1px solid #dde2df;padding:11px 15px;margin-bottom:15px;position:relative}
+.inventory-search label{margin:0;white-space:nowrap}
+.inventory-search input{border:0;outline:0;background:transparent;width:100%;min-width:0;color:#18211f;font:12px "Inter"}
+.inventory-search>span{font-size:20px;color:#b83e32}
+.filters{gap:8px}
+.filter{border:1px solid #cbd3cf;color:#46534e;background:transparent}
+.filter.active,.filter:hover{background:#18211f;border-color:#18211f;color:#fff}
+.cars{gap:15px}
+.car{background:#fff;border:1px solid #dde2df;color:#18211f;transition:transform .35s cubic-bezier(.16,1,.3,1),box-shadow .35s}
+.car:hover{transform:translateY(-5px);border-color:#b83e32;box-shadow:0 18px 35px #18211f12}
+.car-photo{height:220px;background:#e6eae8}
+.car-photo img{transition:transform .55s cubic-bezier(.16,1,.3,1)}
+.car:hover .car-photo img{transform:scale(1.035)}
+.car-photo span{background:#b83e32;color:white;font-family:"Sora"}
+.car-info{padding:21px}
+.car-meta{color:#68716d}
+.car h3{font:700 22px "Sora";letter-spacing:-.05em;color:#18211f}
+.specs{color:#68716d;border-color:#dde2df}
+.price{font:700 14px "Sora";color:#b83e32}
+.details{color:#18211f;font-family:"Sora"}
+.disclaimer{color:#68716d}
+.why{background:#e6eae8;color:#18211f}
+.why .heading h2{color:#18211f}
+.why .heading>p{color:#68716d}
+.why .heading h2 em{color:#b83e32}
+.benefits{gap:0;background:#dde2df;border:1px solid #dde2df}
+.benefit{background:#fafbf9;border-right:1px solid #dde2df;padding:28px;min-height:215px}
+.benefit:last-child{border-right:0}
+.benefit small{color:#b83e32;font-family:"Sora"}
+.benefit h3{font:600 19px "Sora";color:#18211f}
+.benefit p{color:#68716d}
+.steps{background:#dde2df}
+.step{background:#fff;color:#18211f}
+.step b{color:#b83e32;font-family:"Sora"}
+.step h3{font:600 18px "Sora"}
+.step p{color:#68716d}
+.contact{background:#b83e32;color:white}
+.contact h2{font:700 clamp(35px,4.5vw,56px)/1.04 "Sora";letter-spacing:-.08em}
+.contact h2 em{color:#f1d4ce}
+.contact p{color:#f3d9d5}
+.contact .btn{background:#18211f;color:white}
+.footer{background:#18211f}
+.footer .brand{color:white}
+.footlinks a:hover{color:#e2a39b}
+.copy{color:#9ba6a1}
+.mobile{background:#b83e32;color:white}
+@media(max-width:800px){.links{background:#fff}.hero{grid-template-columns:1fr}.hero-copy{padding:75px 7% 45px}.hero-car{min-height:350px;background-position:center}.hero-search{max-width:none;margin-top:25px}.benefits{grid-template-columns:1fr 1fr}.benefit{border-bottom:1px solid #dde2df}.inventory-search{max-width:none}}
+@media(max-width:480px){.hero-search{padding:11px}.inventory-search{display:block}.inventory-search input{padding:10px 0}.inventory-search>span{position:absolute;right:14px;bottom:15px}.benefits{grid-template-columns:1fr}.benefit{border-right:0}.car-photo{height:230px}}
 </style></head>
 <body><div class="ribbon">Portfolio concept · Fictional vehicle dealership · Designed by Golden-Rhys Company</div>
 <header class="nav"><a class="brand" href="#home">MWAYI <b>MOTORS MALAWI</b><small>USED & IMPORTED VEHICLES · MALAWI</small></a><button class="menu" id="menu" aria-label="Toggle menu">☰</button><nav class="links" id="links"><a href="#inventory">Our vehicles</a><a href="#why">Why Mwayi</a><a href="#process">How it works</a><a class="nav-cta" href="#contact">Find your car ↗</a></nav></header>
-<main id="home"><section class="hero"><div class="hero-copy"><div class="eyebrow">QUALITY USED CARS · MALAWI</div><h1>Find the right<br><em>car for Malawi.</em></h1><p>Find practical cars for Malawi roads and everyday life. Compare sample vehicles, ask about condition and paperwork, then arrange a viewing in Lilongwe, Blantyre or your preferred location.</p><div class="actions"><a class="btn" href="#inventory">Browse vehicles ↗</a><a class="text-link" href="#why">Discover the Mwayi difference</a></div></div><div class="hero-car" role="img" aria-label="Premium modern vehicle"><span class="hero-caption">DRIVE YOUR NEXT CHAPTER</span></div></section>
+<main id="home"><section class="hero"><div class="hero-copy"><div class="eyebrow">QUALITY USED CARS · MALAWI</div><h1>Find the right<br><em>car for Malawi.</em></h1><p>Find practical cars for Malawi roads and everyday life. Compare sample vehicles, ask about condition and paperwork, then arrange a viewing in Lilongwe, Blantyre or your preferred location.</p><div class="actions"><a class="btn" href="#inventory">Browse vehicles ↗</a><a class="text-link" href="#why">Discover the Mwayi difference</a></div><form class="hero-search" id="heroSearch"><label for="heroVehicleSearch">SEARCH THE SHOWROOM</label><div><input id="heroVehicleSearch" type="search" placeholder="Try Toyota Vitz or Harrier" autocomplete="off"><button type="submit" aria-label="Search vehicles">↗</button></div></form></div><div class="hero-car" role="img" aria-label="Premium modern vehicle"><span class="hero-caption">DRIVE YOUR NEXT CHAPTER</span></div></section>
 <div class="wrap"><div class="trust"><div><b>Straightforward vehicle details</b><span>Mileage, condition & documents</span></div><div><b>Enquiry made simple</b><span>WhatsApp or call to enquire</span></div><div><b>View before you decide</b><span>Find a vehicle that fits</span></div></div></div>
-<section class="block" id="inventory"><div class="wrap"><div class="heading"><div><div class="label">THE MALAWI SHOWROOM</div><h2>Find your next <em>vehicle.</em></h2></div><p>From Toyota Vitz and Honda Fit hatchbacks to Axio sedans, Nissan Note runabouts, Harrier SUVs and Hilux pickups — these are familiar choices in Malawi's used-import market. This is a visual portfolio demo, not a live stock list.</p></div><div class="filters" role="group" aria-label="Filter vehicles"><button class="filter active" data-filter="all">All vehicles</button><button class="filter" data-filter="hatchback">Hatchbacks</button><button class="filter" data-filter="sedan">Sedans</button><button class="filter" data-filter="suv">SUVs</button><button class="filter" data-filter="pickup">Pickups</button></div><div class="cars">
+<section class="block" id="inventory"><div class="wrap"><div class="heading"><div><div class="label">THE MALAWI SHOWROOM</div><h2>Find your next <em>vehicle.</em></h2></div><p>From Toyota Vitz and Honda Fit hatchbacks to Axio sedans, Nissan Note runabouts, Harrier SUVs and Hilux pickups — these are familiar choices in Malawi's used-import market. This is a visual portfolio demo, not a live stock list.</p></div><div class="inventory-search"><label for="vehicleSearch">FIND A VEHICLE</label><input id="vehicleSearch" type="search" placeholder="Search make, model or body type" autocomplete="off"><span>⌕</span></div><div class="filters" role="group" aria-label="Filter vehicles"><button class="filter active" data-filter="all">All vehicles</button><button class="filter" data-filter="hatchback">Hatchbacks</button><button class="filter" data-filter="sedan">Sedans</button><button class="filter" data-filter="suv">SUVs</button><button class="filter" data-filter="pickup">Pickups</button></div><div class="cars">
 <article class="car" data-type="hatchback"><div class="car-photo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/TOYOTA_VITZ.jpg/1280px-TOYOTA_VITZ.jpg" alt="Toyota Vitz compact hatchback" loading="lazy"><span>CITY FAVOURITE</span></div><div class="car-info"><div class="car-meta"><span>HATCHBACK · DEMO VEHICLE</span><span>ILLUSTRATIVE</span></div><h3>Toyota Vitz</h3><div class="specs"><span>Compact town car</span><span>Ask for mileage</span><span>Verify documents</span></div><div class="car-bottom"><span class="price">Enquire for MWK price</span><a class="details" href="#contact">ENQUIRE ↗</a></div></div></article>
 <article class="car" data-type="sedan"><div class="car-photo"><img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/2018_Toyota_Corolla_Axio.jpg" alt="Toyota Corolla Axio sedan" loading="lazy"><span>EVERYDAY COMFORT</span></div><div class="car-info"><div class="car-meta"><span>SEDAN · DEMO VEHICLE</span><span>ILLUSTRATIVE</span></div><h3>Toyota Corolla Axio</h3><div class="specs"><span>Family sedan</span><span>Ask for mileage</span><span>Verify documents</span></div><div class="car-bottom"><span class="price">Enquire for MWK price</span><a class="details" href="#contact">ENQUIRE ↗</a></div></div></article>
 <article class="car" data-type="hatchback"><div class="car-photo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Honda_FIT_%28GE8%26GP6%29_front.JPG/1280px-Honda_FIT_%28GE8%26GP6%29_front.JPG" alt="Honda Fit hatchback" loading="lazy"><span>PRACTICAL PICK</span></div><div class="car-info"><div class="car-meta"><span>HATCHBACK · DEMO VEHICLE</span><span>ILLUSTRATIVE</span></div><h3>Honda Fit</h3><div class="specs"><span>Compact hatchback</span><span>Ask for mileage</span><span>Verify documents</span></div><div class="car-bottom"><span class="price">Enquire for MWK price</span><a class="details" href="#contact">ENQUIRE ↗</a></div></div></article>
@@ -22,4 +109,13 @@
 <section class="contact" id="contact"><div class="wrap contact-inner"><div><h2>Looking for a car in<br><em>Malawi?</em></h2><p>This is a fictional portfolio concept, not a real dealership or live stock list. Contact Golden-Rhys Company to build a vehicle catalogue for your dealership.</p></div><a class="btn" href="https://wa.me/265997894969?text=Hello%20Golden-Rhys%20Company%2C%20I%20would%20like%20a%20website%20for%20my%20car%20dealership." target="_blank" rel="noopener">Enquire on WhatsApp ↗</a></div></section></main>
 <footer class="footer"><div class="wrap"><div class="foot-top"><div><a class="brand" href="#home">MWAYI <b>MOTOR HOUSE</b><small>THE DRIVE STARTS HERE</small></a><p>A fictional Malawi-focused dealership concept with MWK enquiries, vehicle details and WhatsApp-first contact.</p></div><div class="footlinks"><a href="#inventory">Vehicles</a><a href="#why">Why Motiv</a><a href="#process">How it works</a><a href="https://wa.me/265997894969" target="_blank" rel="noopener">Website by Golden-Rhys ↗</a></div></div><div class="copy"><span>© 2026 MWAYI MOTORS MALAWI · CONCEPT DEMONSTRATION</span><a href="../">← Back to Golden-Rhys Company</a></div></div></footer>
 <a class="mobile" href="https://wa.me/265997894969?text=Hello%20Golden-Rhys%20Company%2C%20I%20would%20like%20a%20website%20for%20my%20car%20dealership." target="_blank" rel="noopener">Create a dealership website like this ↗</a>
-<script>const menu=document.getElementById('menu'),links=document.getElementById('links');menu.addEventListener('click',()=>{links.classList.toggle('open');menu.setAttribute('aria-expanded',links.classList.contains('open')?'true':'false')});links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>links.classList.remove('open')));const filters=[...document.querySelectorAll('.filter')],cars=[...document.querySelectorAll('.car')];filters.forEach(btn=>btn.addEventListener('click',()=>{filters.forEach(b=>b.classList.toggle('active',b===btn));cars.forEach(car=>car.hidden=btn.dataset.filter!=='all'&&car.dataset.type!==btn.dataset.filter)}));</script></body></html>
+<script>
+const menu=document.getElementById('menu'),links=document.getElementById('links');
+menu.addEventListener('click',()=>{const open=links.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));menu.setAttribute('aria-label',open?'Close navigation':'Open navigation')});
+links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{links.classList.remove('open');menu.setAttribute('aria-expanded','false')}));
+const filters=[...document.querySelectorAll('.filter')],cars=[...document.querySelectorAll('.car')],search=document.getElementById('vehicleSearch');
+function applyFilters(){const active=filters.find(b=>b.classList.contains('active'))?.dataset.filter||'all';const term=search.value.trim().toLowerCase();cars.forEach(car=>{const typeMatch=active==='all'||car.dataset.type===active;const textMatch=car.textContent.toLowerCase().includes(term);car.hidden=!(typeMatch&&textMatch)});}
+filters.forEach(btn=>btn.addEventListener('click',()=>{filters.forEach(b=>b.classList.toggle('active',b===btn));applyFilters()}));
+search.addEventListener('input',applyFilters);
+document.getElementById('heroSearch').addEventListener('submit',event=>{event.preventDefault();search.value=document.getElementById('heroVehicleSearch').value;applyFilters();document.getElementById('inventory').scrollIntoView({behavior:'smooth'});});
+</script></body></html>
