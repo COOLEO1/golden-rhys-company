@@ -1,5 +1,6 @@
 (() => {
   const root = document.documentElement;
+  document.querySelectorAll('img').forEach((img) => img.addEventListener('error', () => { img.classList.add('image-load-failed'); img.parentElement?.classList.add('image-fallback'); }, { once: true }));
   const languageButton = document.getElementById("languageSwitch");
   const menuButton = document.getElementById("menuToggle");
   const nav = document.getElementById("mainNav");
