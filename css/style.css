@@ -179,3 +179,12 @@ html{scroll-behavior:smooth;scroll-padding-top:96px}
 
 .photo-credit-note{margin:10px 0 0;color:#87958b;font-size:9px;line-height:1.7}
 .photo-credit-note a{color:var(--lime);text-decoration:underline;text-underline-offset:3px}
+
+/* Portfolio contrast pass — warmer, darker showcase surfaces */
+.work{background:#172a22!important;color:#eee8d9!important}.work .section-index{color:#c8e879!important}
+.work-intro-copy p,.work-footnote p{color:#bdc8bb!important}.work-intro-copy .work-text-link{color:#d4e5b2!important;border-color:#71846f}
+.project-card{background:#20372b!important;border:1px solid rgba(220,231,207,.13)}.project-meta h3{color:#f0eadc!important}
+.project-meta p{color:#b8c4b7!important}.project-type,.work-overline{color:#d2b77d!important}.project-action{color:#c8e879!important}
+.project-media{background:#263b30}.project-media img{background:linear-gradient(135deg,#314b3b,#172a22)}
+.work-footnote>span{color:#c8e879!important}.photo-credit-note{color:#aebcaf!important}.photo-credit-note a{color:#d6c18f!important}
+@media(max-width:760px){.project-card{border-radius:2px}.project-media{min-height:210px}}
