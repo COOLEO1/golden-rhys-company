@@ -88,6 +88,13 @@ section.block{padding:clamp(82px,9vw,120px) 0}
 .footer-links a:hover{color:#e56b3f}
 @media(max-width:800px){.links{background:#e9e7e0}.hero-copy{padding:85px 7% 65px}.services{grid-template-columns:1fr 1fr}.service{border-bottom:1px solid #c9cbc6}.project-grid{grid-template-columns:1fr}.project img{height:300px}}
 @media(max-width:480px){.services{grid-template-columns:1fr}.service{border-right:0}.project img{height:250px}.hero-stamp{width:84px;height:84px}}
+
+/* Responsive motion system — smooth on touch devices and reduced-motion aware */
+html{scroll-behavior:smooth}
+a,button,.service,.project,.step,.btn{transition:transform .46s cubic-bezier(.16,1,.3,1),background-color .3s ease,color .3s ease,border-color .3s ease,box-shadow .46s cubic-bezier(.16,1,.3,1)}
+@media(hover:hover) and (pointer:fine){.service:hover,.project:hover,.step:hover{transform:translateY(-4px)}}
+@media(max-width:800px){.hero{min-height:0}.hero-copy{padding-top:75px;padding-bottom:70px}.project img{transition:none}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
 </style>
 </head>
 <body>
