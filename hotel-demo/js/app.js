@@ -60,16 +60,16 @@
     departure.min = localDate;
   });
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.12 });
-  document.querySelectorAll(".section-heading, .intro-grid, .intro-photo, .room-card, .experience-card, .story-copy, .story-image, .journal-grid article, .enquire-heading, .enquiry-form").forEach((item) => {
-    item.classList.add("reveal");
-    observer.observe(item);
-  });
+  const revealItems = document.querySelectorAll(".section-heading, .intro-grid, .intro-photo, .room-card, .experience-card, .story-copy, .story-image, .journal-grid article, .enquire-heading, .enquiry-form");
+  if ("IntersectionObserver" in window) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: "0px 0px -30px 0px" });
+    revealItems.forEach((item) => { item.classList.add("reveal"); observer.observe(item); });
+  } else { revealItems.forEach((item) => item.classList.add("visible")); }
 })();
