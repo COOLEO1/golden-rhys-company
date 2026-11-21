@@ -95,6 +95,26 @@ a,button,.service,.project,.step,.btn{transition:transform .46s cubic-bezier(.16
 @media(hover:hover) and (pointer:fine){.service:hover,.project:hover,.step:hover{transform:translateY(-4px)}}
 @media(max-width:800px){.hero{min-height:0}.hero-copy{padding-top:75px;padding-bottom:70px}.project img{transition:none}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+
+/* Tithandizane Construction — grounded charcoal, limestone and clay */
+:root{--ink:#171c1d;--paper:#252b29;--muted:#bdc1b9;--lime:#d97855;--line:#46504b;--white:#e8e2d6}
+body{background:#252b29!important;color:#eee9df!important}.nav{background:#202725!important;border-color:#46504b!important}
+.brand,.links a{color:#eee9df!important}.brand small,.links a{color:#c1c7bd!important}
+.nav-cta,.btn{background:#d97855!important;color:#211d1a!important}.hero{background:#171c1d!important}
+.stats{background:#252f2d!important;color:#eee9df!important;box-shadow:none!important}.stat{border-color:#46504b!important}.stat span{color:#c1c7bd!important}
+section.block:not(.projects):not(.process){background:#252b29!important;color:#eee9df!important}
+.section-head h2,.about h2{color:#eee9df!important}.section-head>p,.about-copy>p,.project-note{color:#c1c7bd!important}
+.services{background:#46504b!important}.service{background:#2b3632!important;border:0!important;color:#eee9df!important}
+.service h3{color:#f0e9dc!important}.service p{color:#c1c7bd!important}
+.projects{background:#1d2524!important;color:#eee9df!important}.project{background:#2a3532!important}.project-info{color:#eee9df!important}
+.about{background:#252b29!important}.about-image{background:#34423a}.process{background:#171c1d!important}
+.steps{background:#46504b!important}.step{background:#202725!important}
+.cta{background:#b96247!important;color:#211d1a!important}.cta p{color:#392d27!important}
+.cta .btn{background:#171c1d!important;color:#f1eadf!important}.footer{background:#101718!important}
+.image-fallback{background:linear-gradient(135deg,#46574d,#171c1d)!important;position:relative}
+img.image-load-failed{opacity:0}.image-fallback:after{content:"Malawi building reference";position:absolute;left:12px;bottom:12px;color:#eee9df;font-size:9px;letter-spacing:.1em}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
+
 </style>
 </head>
 <body>
@@ -112,5 +132,5 @@ a,button,.service,.project,.step,.btn{transition:transform .46s cubic-bezier(.16
 <footer class="footer"><div class="wrap"><div class="footer-top"><div><a class="brand" href="#home"><span class="brand-mark">TC</span><span>TITHANDIZANE CONSTRUCTION & CIVILS<small>BUILDING WITH PURPOSE</small></span></a><p>A fictional Malawi-focused construction website concept featuring MWK quotations, local project types and clear enquiries.</p></div><div class="footer-links"><a href="#services">Services</a><a href="#projects">Projects</a><a href="#about">Approach</a><a href="https://wa.me/265997894969" target="_blank" rel="noopener">Website by Golden-Rhys ↗</a></div></div><div class="copyright"><span>© 2026 TITHANDIZANE CONSTRUCTION & CIVILS · CONCEPT DEMONSTRATION</span><a href="../">← Back to Golden-Rhys Company</a></div></div></footer>
 <a class="mobile-cta" href="https://wa.me/265997894969?text=Hello%20Golden-Rhys%20Company%2C%20I%20would%20like%20a%20website%20for%20my%20construction%20business." target="_blank" rel="noopener">Build a website like this ↗</a>
 <script>const menu=document.getElementById('menu'),links=document.getElementById('links');menu.addEventListener('click',()=>{links.classList.toggle('open');menu.setAttribute('aria-expanded',links.classList.contains('open')?'true':'false')});links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>links.classList.remove('open')));</script>
-</body>
+<script id="portfolioImageFallbacks">document.querySelectorAll("img").forEach(function(img){img.addEventListener("error",function(){img.classList.add("image-load-failed");if(img.parentElement)img.parentElement.classList.add("image-fallback");},{once:true});});</script></body>
 </html>
